@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie zdalne e-MSI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Plus+Jakarta+Sans:wght@300;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="title">Zadanie zdalne e-MSI</h1>
+    <main>
+        <div id="left">
+            <div><a href="kontrolki.html">Różne kontrolki HTML</a>
+            </div>
+            <div><a href="pracownicy.html">Tabela Pracowników</a></div>
+            <div><a href="faktury.html">Tabela Faktur VAT</a>
+            </div>
+            <div><a href="delegacje.php">Tabela Delegacji BD</a>
+            </div>
+            <div><a href="kontrahenci.php">Dane Kontrahentów</a>
+            </div>
+        </div>
+        <div id="right">
+            <h2 class="section-title">Tabela Pracowników</h2>
+            <section class="employees">
+                <table>
+                    <thead>
+                        <tr class="title-row">
+                            <td>Lp.</td>
+                            <td>Imię</td>
+                            <td>Nazwisko</td>
+                            <td>Stanowisko</td>
+                            <td>Data zatrudnienia</td>
+                            <td>Ilość dni urlopowych</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="odd-row">
+                            <td>1</td>
+                            <td>Józef</td>
+                            <td>Nowak</td>
+                            <td>Gółwny księgowy</td>
+                            <td>2.01.2005</td>
+                            <td>35</td>
+                        </tr>
+                        <tr class="even-row">
+                            <td>2</td>
+                            <td>Andżelika</td>
+                            <td>Górska</td>
+                            <td>Sekretarka prezesa</td>
+                            <td>1.03.2021</td>
+                            <td>11</td>
+                        </tr>
+                        <tr class="odd-row">
+                            <td>3</td>
+                            <td>Grzegorz</td>
+                            <td>Juskowiak</td>
+                            <td>Programista front-end</td>
+                            <td>1.07.2016</td>
+                            <td>17</td>
+                        </tr>
+                        <tr class="even-row">
+                            <td>4</td>
+                            <td>Monika</td>
+                            <td>Piotrowska</td>
+                            <td>Grafik</td>
+                            <td>15.06.2019</td>
+                            <td>21</td>
+                        </tr>
+                        <tr class="odd-row">
+                            <td>5</td>
+                            <td>Justyna</td>
+                            <td>Grabowska</td>
+                            <td>Tester manualny</td>
+                            <td>15.09.2017</td>
+                            <td>5</td>
+                        </tr>
+                        <tr class="even-row">
+                            <td>6</td>
+                            <td>Robert</td>
+                            <td>Dobrowolski</td>
+                            <td>Programista PHP</td>
+                            <td>1.02.2013</td>
+                            <td>29</td>
+                        </tr>
+                        <tr class="odd-row">
+                            <td>7</td>
+                            <td>Agnieszka</td>
+                            <td>Bednarz</td>
+                            <td>Główna kadrowa</td>
+                            <td>10.02.2009</td>
+                            <td>26</td>
+                        </tr>
+                        <tr class="even-row">
+                            <td>8</td>
+                            <td>Paweł</td>
+                            <td>Krychowiak</td>
+                            <td>Help desk support</td>
+                            <td>1.03.2020</td>
+                            <td>17</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+            <section class="colors">
+                <h3>Zmiana kolorów wierszy w tabeli</h3>
+                <div class="colors-change">
+                    <div class="first-color"> <label for="color">Kolor nieparzystych wierszy</label><input type="color"
+                            value="#bbbbbb" class="odd-color" /></div>
+                    <div class="second-color"> <label for="color">Kolor parzystych wierszy</label><input type="color"
+                            value="#dddddd" class="even-color" /></div>
+
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

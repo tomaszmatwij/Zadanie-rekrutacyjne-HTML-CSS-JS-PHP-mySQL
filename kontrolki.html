@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie zdalne e-MSI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Plus+Jakarta+Sans:wght@300;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="title">Zadanie zdalne e-MSI</h1>
+    <main>
+        <div id="left">
+            <div><a href="kontrolki.html">Różne kontrolki HTML</a>
+            </div>
+            <div><a href="pracownicy.html">Tabela Pracowników</a></div>
+            <div><a href="faktury.html">Tabela Faktur VAT</a>
+            </div>
+            <div><a href="delegacje.php">Tabela Delegacji BD</a>
+            </div>
+            <div><a href="kontrahenci.php">Dane Kontrahentów</a>
+            </div>
+        </div>
+        <div id="right">
+            <h2 class="section-title">Różne kontrolki HTML</h2>
+            <form action="#" class="controls">
+                <div class="form-element">
+                    <lebel for="nip">NIP</lebel><input id="nip" type="text">
+                </div>
+                <div class="form-element">
+                    <lebel for="regon">REGON</lebel><input id="regon" type="number">
+                </div>
+                <div class="form-element">
+                    <lebel for="name">NAZWA</lebel><input id="name" type="text">
+                </div>
+                <div class="form-element">
+                    <lebel for="start-date">DATA POWSTANIA</lebel><input id="start-date" type="date">
+                </div>
+                <div class="form-element">
+                    <lebel for="street">ULICA</lebel><input id="street" type="text">
+                </div>
+                <div class="form-element">
+                    <lebel for="home-number">NUMER DOMU</lebel><input id="home-number" type="text">
+                </div>
+                <div class="form-element">
+                    <lebel for="flat-number">NUMER MIESZKANIA</lebel><input id="flat-number" type="text">
+                </div>
+                <div class="form-element">
+                    <lebel for="comments">UWAGI</lebel><textarea id="comments"></textarea>
+                </div>
+
+            </form>
+            <div class="colors">
+                <p>Wybierz kolor</p>
+                <select class="color-list" multiple="multiple" size="7">
+                    <option class="green" value="green">Zielony</option>
+                    <option class="blue" value="blue">Niebieski</option>
+                    <option class="gray" value="gray">Szary</option>
+                    <option value="turquoise" class="turquoise">Turkusowy</option>
+                    <option value="navy-blue" class="navy-blue">Granatowy</option>
+                    <option value="red" class="red">Czerwony</option>
+                    <option value="white" class="white">Biały</option>
+
+                </select>
+            </div>
+            <div class="vat">
+                <p>Wybierz stawkę VAT</p>
+                <select name="vat-list" size="6">
+                    <option value="zw">ZW</option>
+                    <option value="np">NP</option>
+                    <option value="0">0%</option>
+                    <option value="3">3%</option>
+                    <option value="8">8%</option>
+                    <option value="23">23%</option>
+                </select>
+            </div>
+            <div class="list">
+                <p>Lista</p>
+                <ol>
+                    <li>Element</li>
+                    <li>Element</li>
+                    <li>Element</li>
+                </ol>
+            </div>
+
+        </div>
+    </main>
+
+
+
+</body>
+
+</html>

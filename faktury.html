@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie zdalne e-MSI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Plus+Jakarta+Sans:wght@300;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="title">Zadanie zdalne e-MSI</h1>
+    <main>
+        <div id="left">
+            <div><a href="kontrolki.html">Różne kontrolki HTML</a>
+            </div>
+            <div><a href="pracownicy.html">Tabela Pracowników</a></div>
+            <div><a href="faktury.html">Tabela Faktur VAT</a>
+            </div>
+            <div><a href="delegacje.php">Tabela Delegacji BD</a>
+            </div>
+            <div><a href="kontrahenci.php">Dane Kontrahentów</a>
+            </div>
+        </div>
+        <div id="right">
+            <h2 class="section-title">Tabela faktur VAT</h2>
+            <section class="invoices">
+                <table>
+                    <thead>
+                        <tr class="title-row">
+                            <td>Lp.</td>
+                            <td>Opis</td>
+                            <td>MPK</td>
+                            <td>Kwota netto </td>
+                            <td>Ilość</td>
+                            <td>VAT</td>
+                            <td>Kwota brutto </td>
+                            <td>wartość netto </td>
+                            <td>wartość brutto</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="row odd-row">
+                            <td>1</td>
+                            <td>Laptop</td>
+                            <td>Optimus S.A.</td>
+                            <td><input type="number" class="netto" value="3999.99"></td>
+                            <td><input type="number" class="amount" value="1"></td>
+                            <td><select class="vat-list">
+                                    <option value="1">ZW</option>
+                                    <option value="1">NP</option>
+                                    <option value="1">0%</option>
+                                    <option value="1.03">3%</option>
+                                    <option value="1.08">8%</option>
+                                    <option value="1.23" selected>23%</option>
+                                </select></td>
+                            <td class="gross"></td>
+                            <td class="net-value"></td>
+                            <td class="gross-value"></td>
+
+                        </tr>
+                        <tr class="row even-row">
+                            <td>2</td>
+                            <td>Internet</td>
+                            <td>UPS</td>
+                            <td><input type="number" class="netto" value="199"></td>
+                            <td><input type="number" class="amount" value="1"></td>
+                            <td><select class="vat-list">
+                                    <option value="1">ZW</option>
+                                    <option value="1">NP</option>
+                                    <option value="1">0%</option>
+                                    <option value="1.03">3%</option>
+                                    <option value="1.08">8%</option>
+                                    <option value="1.23" selected>23%</option>
+                                </select></td>
+                            <td class="gross"></td>
+                            <td class="net-value"></td>
+                            <td class="gross-value"></td>
+                        </tr>
+                        <tr class="row odd-row">
+                            <td>3</td>
+                            <td>Prąd</td>
+                            <td>PGE</td>
+                            <td><input type="number" class="netto" value="1052.36"></td>
+                            <td><input type="number" class="amount" value="1"></td>
+                            <td><select class="vat-list">
+                                    <option value="1">ZW</option>
+                                    <option value="1">NP</option>
+                                    <option value="1">0%</option>
+                                    <option value="1.03">3%</option>
+                                    <option value="1.08">8%</option>
+                                    <option value="1.23" selected>23%</option>
+                                </select></td>
+                            <td class="gross"></td>
+                            <td class="net-value"></td>
+                            <td class="gross-value"></td>
+                        </tr>
+                        <tr class="row even-row">
+                            <td>4</td>
+                            <td>Owocowe czwartki</td>
+                            <td>Tesco</td>
+                            <td><input type="number" class="netto" value="89.9"></td>
+                            <td><input type="number" class="amount" value="1"></td>
+                            <td><select class="vat-list">
+                                    <option value="1">ZW</option>
+                                    <option value="1">NP</option>
+                                    <option value="1">0%</option>
+                                    <option value="1.03">3%</option>
+                                    <option value="1.08">8%</option>
+                                    <option value="1.23" selected>23%</option>
+                                </select></td>
+                            <td class="gross"></td>
+                            <td class="net-value"></td>
+                            <td class="gross-value"></td>
+                        </tr>
+                        <tr class="row odd-row">
+                            <td>5</td>
+                            <td>Koncert integracyjny</td>
+                            <td>ebilet.pl</td>
+                            <td><input type="number" class="netto" value="199"></td>
+                            <td><input type="number" class="amount" value="23"></td>
+                            <td><select class="vat-list">
+                                    <option value="1">ZW</option>
+                                    <option value="1">NP</option>
+                                    <option value="1">0%</option>
+                                    <option value="1.03">3%</option>
+                                    <option value="1.08">8%</option>
+                                    <option value="1.23" selected>23%</option>
+                                </select></td>
+                            <td class="gross"></td>
+                            <td class="net-value"></td>
+                            <td class="gross-value"></td>
+                        </tr>
+                        <tr class="row even-row">
+                            <td>6</td>
+                            <td>Materiały marketingowe</td>
+                            <td>e-druk.pl</td>
+                            <td><input type="number" class="netto" value="2000"></td>
+                            <td><input type="number" class="amount" value="1"></td>
+                            <td><select class="vat-list">
+                                    <option value="1">ZW</option>
+                                    <option value="1">NP</option>
+                                    <option value="1">0%</option>
+                                    <option value="1.03">3%</option>
+                                    <option value="1.08">8%</option>
+                                    <option value="1.23" selected>23%</option>
+                                </select></td>
+                            <td class="gross"></td>
+                            <td class="net-value"></td>
+                            <td class="gross-value"></td>
+                        </tr>
+                        <tr class="row odd-row">
+                            <td>7</td>
+                            <td>Kawa</td>
+                            <td>tchibo.pl</td>
+                            <td><input type="number" class="netto" value="69.99"></td>
+                            <td><input type="number" class="amount" value="10"></td>
+                            <td><select class="vat-list">
+                                    <option value="1">ZW</option>
+                                    <option value="1">NP</option>
+                                    <option value="1">0%</option>
+                                    <option value="1.03">3%</option>
+                                    <option value="1.08">8%</option>
+                                    <option value="1.23" selected>23%</option>
+                                </select></td>
+                            <td class="gross"></td>
+                            <td class="net-value"></td>
+                            <td class="gross-value"></td>
+                        </tr>
+                        <tr class="row even-row">
+                            <td>8</td>
+                            <td>Papier do ksero</td>
+                            <td>papier.pl</td>
+                            <td><input type="number" class="netto" value="25.49"></td>
+                            <td><input type="number" class="amount" value="30"></td>
+                            <td><select class="vat-list">
+                                    <option value="1">ZW</option>
+                                    <option value="1">NP</option>
+                                    <option value="1">0%</option>
+                                    <option value="1.03">3%</option>
+                                    <option value="1.08">8%</option>
+                                    <option value="1.23" selected>23%</option>
+                                </select></dt>
+                            <td class="gross"></td>
+                            <td class="net-value"></td>
+                            <td class="gross-value"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="net-button">Powyżej 1000,00 zł netto</button>
+
+            </section>
+        </div>
+    </main>
+    <script src="script2.js"></script>
+</body>
+
+</html>

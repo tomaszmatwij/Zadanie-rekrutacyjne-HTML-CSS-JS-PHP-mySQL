@@ -1,0 +1,350 @@
+/* font-family: 'Orbitron', sans-serif;
+font-family: 'Plus Jakarta Sans', sans-serif; */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.title {
+	padding: 30px 0;
+	background-color: #643843;
+	text-align: center;
+	font-size: 46px;
+	font-family: 'Orbitron', sans-serif;
+}
+main {
+	min-height: 100vh;
+	display: flex;
+	background-image: linear-gradient(315deg, #4c4177 0%, #2a5470);
+	color: #ddd;
+}
+#left {
+	padding: 50px 50px 0 5px;
+	width: 25%;
+	border-right: 1px solid black;
+	font-size: 20px;
+}
+
+#left a {
+	display: block;
+	margin: 0 10px;
+	padding: 10px;
+	text-decoration: none;
+	color: #ddd;
+	transition: transform 0.3s, color 0.3s;
+}
+#left a:hover {
+	transform: scale(1.1);
+	color: #87a810;
+}
+
+#right {
+	width: 75%;
+	margin: 10px 50px;
+	font-size: 20px;
+	margin-bottom: 100px;
+}
+
+.section-title {
+	margin: 30px;
+	text-align: center;
+	font-size: 30px;
+}
+.controls {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin-bottom: 30px;
+}
+.controls .form-element {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+.controls input,
+.controls textarea {
+	width: 200px;
+	padding: 7px;
+	border-radius: 5px;
+	border: none;
+}
+.controls input:focus,
+.controls textarea:focus {
+	outline: none;
+	background-color: #ccc;
+}
+.controls textarea {
+	max-width: 200px;
+	min-width: 200px;
+	max-height: 150px;
+	min-height: 100px;
+}
+.colors p,
+.vat p,
+.list p {
+	font-size: 25px;
+	margin: 40px 0 20px;
+}
+.colors select,
+.vat select {
+	width: 150px;
+	height: 150px;
+	border-radius: 5px;
+}
+.colors select:focus,
+.vat select:focus {
+	outline: none;
+}
+.colors option,
+.vat option {
+	padding: 10px;
+	text-align: center;
+}
+.vat option {
+	border-bottom: 1px solid #aaa;
+}
+.colors .green {
+	background-color: green;
+}
+.colors .blue {
+	background-color: blue;
+}
+.colors .gray {
+	background-color: gray;
+}
+.colors .turquoise {
+	background-color: turquoise;
+}
+.colors .navy-blue {
+	background-color: navy;
+	color: aliceblue;
+}
+.colors .red {
+	background-color: tomato;
+}
+table {
+	padding: 5px 0;
+	background-color: #ddd;
+
+	font-size: 18px;
+	text-align: center;
+	border-spacing: 0;
+	border-radius: 8px;
+	color: #111;
+	overflow: hidden;
+}
+table,
+th,
+td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+th,
+td {
+	padding: 5px;
+}
+thead {
+	font-weight: bold;
+	background-color: #13aeb9;
+}
+
+.odd-row {
+	background-color: #bbb;
+}
+.colors h3 {
+	margin: 40px;
+}
+.colors-change {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 90px;
+	margin: 0 40px;
+}
+.first-color,
+.second-color {
+	display: flex;
+	justify-content: space-between;
+	width: 350px;
+}
+.colors-change input {
+	width: 45px;
+	height: 45px;
+	background-color: transparent;
+	appearance: none;
+	border: none;
+	cursor: pointer;
+}
+
+.colors-change input::-webkit-color-swatch {
+	border-radius: 50%;
+	border: 2px solid #4c4177;
+	transition: border 0.3s;
+}
+.colors-change input::-webkit-color-swatch:hover {
+	border: 2px solid rgb(17, 150, 15);
+}
+.invoices td {
+	padding: 3px;
+}
+.invoices input,
+.invoices select {
+	width: 100px;
+	max-height: 30px;
+	background-color: transparent;
+	border: none;
+	padding: 5px;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-size: 16px;
+	text-align: center;
+	padding: 5px;
+}
+.invoices option {
+	background-color: transparent;
+	border-bottom: 1px solid black;
+}
+.invoices input:focus,
+.invoices select:focus {
+	outline: none;
+}
+.invoices input::-webkit-outer-spin-button,
+.invoices input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+.net-button {
+	display: block;
+	margin: 80px 150px;
+	padding: 10px 20px;
+	font-size: 16px;
+	border-radius: 5px;
+	background-color: lime;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+.green-row {
+	background-color: lime;
+}
+.net-button:hover {
+	background-color: rgb(40, 158, 25);
+}
+
+.contractors button {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 0 5px;
+	background-color: transparent;
+	border-radius: 3px;
+	border: none;
+	box-shadow: 0 0 2px 2px #444;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.contractors i {
+	font-size: 16px;
+	color: #444;
+}
+.contractors button:hover {
+	background-color: #5dec15;
+}
+
+.add-button {
+	display: block;
+	margin: 60px 0;
+	padding: 15px 30px;
+	font-size: 20px;
+	border-radius: 5px;
+	border: none;
+	background-color: #bbb;
+	border: 2px solid #3d4a74;
+	cursor: pointer;
+	transition: border 0.3s;
+}
+.add-button:hover,
+.accept-delete:hover,
+.cancel-delete:hover {
+	border: 2px solid #5dec15;
+}
+.add-panel,
+.update-panel,
+.delete-panel {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 50px;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 0 10px 10px #525252;
+	background-color: #414775;
+}
+.add-panel-title,
+.update-panel-panel {
+	margin-bottom: 30px;
+}
+.add-panel .controls,
+.update-panel .controls {
+	display: flex;
+	width: 100%;
+}
+
+.panel-buttons {
+	display: flex;
+	margin-top: 50px;
+	width: 100%;
+	justify-content: space-around;
+}
+.panel-buttons input {
+	padding: 10px 40px;
+	width: 40%;
+	text-align: center;
+	font-size: 20px;
+	border-radius: 5px;
+	border: none;
+	background-color: #bbb;
+	border: 2px solid #3d4a74;
+	cursor: pointer;
+	transition: border 0.3s;
+}
+.panel-buttons button:hover {
+	border: 2px solid #5dec15;
+}
+
+.show {
+	display: block;
+}
+i {
+	pointer-events: none;
+}
+
+.old-nip,
+.old-nip2 {
+	display: none;
+}
+
+.contracter-title,
+.delete-contracter-title {
+	font-size: 30px;
+	margin: 20px 0;
+	text-align: center;
+}
+.add-button:hover,
+.accept-delete:hover,
+.cancel-delete:hover,
+.cancel-update-user:hover,
+.update-user:hover,
+.cancel-user:hover,
+.add-user:hover {
+	border: 2px solid #5dec15;
+}
